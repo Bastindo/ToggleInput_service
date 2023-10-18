@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Toggle Touchscreen
+Exec=bash /usr/local/bin/toggle_input.sh
+Type=Application
+Terminal=false
+Icon=input-tablet

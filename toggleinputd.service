@@ -1,0 +1,10 @@
+[Unit]
+Description=Toggle input
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/toggleinputd.py
+ExecStop=/bin/kill -s SIGTERM $MAINPID
+User=root
+
+[Install]
+WantedBy=multi-user.target
