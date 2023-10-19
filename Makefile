@@ -4,3 +4,4 @@ install:
 	install -pm644 touchscreen.desktop /usr/share/applications/touchscreen.desktop 
 	install -pm644 toggleinputd.service /etc/systemd/system/toggleinputd.service
 	systemctl enable --now toggleinputd.service
+	systemctl restart --now toggleinputd.service
